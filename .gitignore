@@ -5,6 +5,7 @@ __pycache__/
 
 *.xyz
 *.txt
+*.pkl
 
 # C extensions
 *.so
