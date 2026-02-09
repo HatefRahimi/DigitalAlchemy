@@ -1,6 +1,7 @@
 import gradio as gr
 import numpy as np
 import pandas as pd
+import pickle
 import tensorflow as tf
 from tensorflow import keras
 
@@ -163,23 +164,23 @@ def predict_yield(catalyst, aryl_halide, base, additive):
                 </h3>
                 <table style="width: 100%; border-collapse: collapse; font-size: 1.1em;">
                     <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                        <td style="padding: 10px; font-weight: 600; color: {text_color}; width: 30%;">Catalyst:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color}; width: 30%;">⚛️ Catalyst:</td>
                         <td style="padding: 10px; color: {text_color};">{catalyst}</td>
                     </tr>
                     <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                        <td style="padding: 10px; font-weight: 600; color: {text_color};"> Aryl Halide:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color};">🔬 Aryl Halide:</td>
                         <td style="padding: 10px; color: {text_color};">{aryl_halide}</td>
                     </tr>
                     <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                        <td style="padding: 10px; font-weight: 600; color: {text_color};">Base:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color};">⚗️ Base:</td>
                         <td style="padding: 10px; color: {text_color};">{base}</td>
                     </tr>
                     <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                        <td style="padding: 10px; font-weight: 600; color: {text_color};">Additive:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color};">💧 Additive:</td>
                         <td style="padding: 10px; color: {text_color};">{additive}</td>
                     </tr>
                     <tr>
-                        <td style="padding: 10px; font-weight: 600; color: {text_color};">Amine:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color};">🧪 Amine:</td>
                         <td style="padding: 10px; color: {text_color};">p-toluidine</td>
                     </tr>
                 </table>
@@ -198,7 +199,7 @@ def predict_yield(catalyst, aryl_halide, base, additive):
         """
 
 
-# CSS
+# Custom CSS for better appearance
 custom_css = """
 #title {
     text-align: center;
@@ -241,7 +242,7 @@ with gr.Blocks(title="Buchwald-Hartwig Yield Predictor", css=custom_css, theme=g
     gr.HTML(
         """
         <div id="title">🧪 Buchwald-Hartwig Yield Predictor</div>
-        <div id="subtitle">Predict C-N coupling reaction yields</div>
+        <div id="subtitle">Predict C-N coupling reaction yields using machine learning</div>
         """
     )
 
@@ -289,7 +290,7 @@ with gr.Blocks(title="Buchwald-Hartwig Yield Predictor", css=custom_css, theme=g
     gr.HTML(
         """
         <div id="footer">
-            <strong>Model:</strong>Model: Neural Network <br>
+            <strong>Model:</strong> Neural Network <br>
             <strong>Dataset:</strong> 4312 Buchwald-Hartwig reactions from Ahneman.<br>
             <strong>Performance:</strong> RMSE = 7.0% | MAE = 4.9% | R² = 0.93
         </div>
