@@ -275,7 +275,7 @@ with gr.Blocks(title="Buchwald-Hartwig Yield Predictor", css=custom_css, theme=g
             )
 
     predict_btn = gr.Button(
-        "🔬 Predict Yield", variant="primary", size="lg", elem_id="predict-btn")
+        "Predict Yield", variant="primary", size="lg", elem_id="predict-btn")
 
     output = gr.HTML()
 
