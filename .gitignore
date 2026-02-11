@@ -160,6 +160,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+main_project_env/
+venv/
+env/
+.venv/
 
 # Spyder project settings
 .spyderproject
@@ -219,11 +223,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Virtual environments
-main_project_env/
-venv/
-env/
-.venv/
+
 
 
 # Large installers
@@ -231,3 +231,5 @@ Miniconda3-latest-Linux-x86_64.sh
 
 # ML model binaries
 *.keras
+
+*.pem
