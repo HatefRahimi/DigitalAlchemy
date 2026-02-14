@@ -13,15 +13,15 @@ COMPONENTS = {
         'Catalyst 4 (Pd-AdBrettPhos)': 'COc1ccc(OC)c(P(C23CC4CC(CC(C4)C2)C3)(C23CC4CC(CC(C4)C2)C3)->[Pd]2(OS(=O)(=O)C(F)(F)F)<-Nc3ccccc3-c3ccccc32)c1-c1c(C(C)C)cc(C(C)C)cc1C(C)C',
     },
     'aryl_halide': {
-        '4-CF3-phenyl chloride': 'FC(F)(F)c1ccc(Cl)cc1',
-        '4-CF3-phenyl bromide': 'FC(F)(F)c1ccc(Br)cc1',
-        '4-CF3-phenyl iodide': 'FC(F)(F)c1ccc(I)cc1',
-        '4-OMe-phenyl chloride': 'COc1ccc(Cl)cc1',
-        '4-OMe-phenyl bromide': 'COc1ccc(Br)cc1',
-        '4-OMe-phenyl iodide': 'COc1ccc(I)cc1',
-        '4-Et-phenyl chloride': 'CCc1ccc(Cl)cc1',
-        '4-Et-phenyl bromide': 'CCc1ccc(Br)cc1',
-        '4-Et-phenyl iodide': 'CCc1ccc(I)cc1',
+        '1-chloro-4-(trifluoromethyl)benzene': 'FC(F)(F)c1ccc(Cl)cc1',
+        '1-bromo-4-(trifluoromethyl)benzene': 'FC(F)(F)c1ccc(Br)cc1',
+        '1-iodo-4-(trifluoromethyl)benzene': 'FC(F)(F)c1ccc(I)cc1',
+        '1-chloro-4-methoxybenzene': 'COc1ccc(Cl)cc1',
+        '1-bromo-4-methoxybenzene': 'COc1ccc(Br)cc1',
+        '1-iodo-4-methoxybenzene': 'COc1ccc(I)cc1',
+        '1-chloro-4-ethylbenzene': 'CCc1ccc(Cl)cc1',
+        '1-bromo-4-ethylbenzene': 'CCc1ccc(Br)cc1',
+        '1-ethyl-4-iodobenzene': 'CCc1ccc(I)cc1',
         '2-chloropyridine': 'Clc1ccccn1',
         '2-bromopyridine': 'Brc1ccccn1',
         '2-iodopyridine': 'Ic1ccccn1',
@@ -164,23 +164,23 @@ def predict_yield(catalyst, aryl_halide, base, additive):
                 </h3>
                 <table style="width: 100%; border-collapse: collapse; font-size: 1.1em;">
                     <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                        <td style="padding: 10px; font-weight: 600; color: {text_color}; width: 30%;">⚛️ Catalyst:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color}; width: 30%;">Catalyst:</td>
                         <td style="padding: 10px; color: {text_color};">{catalyst}</td>
                     </tr>
                     <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                        <td style="padding: 10px; font-weight: 600; color: {text_color};">🔬 Aryl Halide:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color};">Aryl Halide:</td>
                         <td style="padding: 10px; color: {text_color};">{aryl_halide}</td>
                     </tr>
                     <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                        <td style="padding: 10px; font-weight: 600; color: {text_color};">⚗️ Base:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color};">Base:</td>
                         <td style="padding: 10px; color: {text_color};">{base}</td>
                     </tr>
                     <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                        <td style="padding: 10px; font-weight: 600; color: {text_color};">💧 Additive:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color};">Additive:</td>
                         <td style="padding: 10px; color: {text_color};">{additive}</td>
                     </tr>
                     <tr>
-                        <td style="padding: 10px; font-weight: 600; color: {text_color};">🧪 Amine:</td>
+                        <td style="padding: 10px; font-weight: 600; color: {text_color};">Amine:</td>
                         <td style="padding: 10px; color: {text_color};">p-toluidine</td>
                     </tr>
                 </table>
