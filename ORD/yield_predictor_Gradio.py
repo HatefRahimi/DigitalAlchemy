@@ -90,7 +90,7 @@ def create_input_vector(catalyst_smiles, aryl_halide_smiles, base_smiles, additi
                 idx = FEATURE_COLUMNS.index(feature_name)
                 vector[idx] = 1
 
-    # Always set toluidine to 1 (only one variant)
+    # Always set toluidine to 1
     if 'toluidine_1' in FEATURE_COLUMNS:
         idx = FEATURE_COLUMNS.index('toluidine_1')
         vector[idx] = 1
@@ -199,7 +199,6 @@ def predict_yield(catalyst, aryl_halide, base, additive):
         """
 
 
-# Custom CSS for better appearance
 custom_css = """
 #title {
     text-align: center;
