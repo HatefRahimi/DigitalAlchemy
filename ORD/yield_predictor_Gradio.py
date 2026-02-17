@@ -68,14 +68,11 @@ for component, options in COMPONENTS.items():
     for i, (label, smiles) in enumerate(options.items(), 1):
         SMILES_TO_FEATURE[smiles] = f"{component}_{i}"
 
-# Create feature order (same as training)
+# Create feature order 
 FEATURE_COLUMNS = []
-for comp in ['catalyst', 'aryl_halide', 'base', 'additive', 'toluidine']:
-    if comp == 'toluidine':
-        FEATURE_COLUMNS.append('toluidine_1')
-    else:
-        n_unique = len(COMPONENTS.get(comp, {}))
-        FEATURE_COLUMNS.extend([f"{comp}_{i}" for i in range(1, n_unique + 1)])
+for comp in ['catalyst', 'aryl_halide', 'base', 'additive']:
+    n_unique = len(COMPONENTS.get(comp, {}))
+    FEATURE_COLUMNS.extend([f"{comp}_{i}" for i in range(1, n_unique + 1)])
 
 
 def create_input_vector(catalyst_smiles, aryl_halide_smiles, base_smiles, additive_smiles):
@@ -89,11 +86,6 @@ def create_input_vector(catalyst_smiles, aryl_halide_smiles, base_smiles, additi
             if feature_name in FEATURE_COLUMNS:
                 idx = FEATURE_COLUMNS.index(feature_name)
                 vector[idx] = 1
-
-    # Always set toluidine to 1
-    if 'toluidine_1' in FEATURE_COLUMNS:
-        idx = FEATURE_COLUMNS.index('toluidine_1')
-        vector[idx] = 1
 
     return vector
 
