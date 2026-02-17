@@ -283,7 +283,7 @@ with gr.Blocks(title="Buchwald-Hartwig Yield Predictor", css=custom_css, theme=g
         <div id="footer">
             <strong>Model:</strong> Neural Network <br>
             <strong>Dataset:</strong> 4312 Buchwald-Hartwig reactions from Ahneman.<br>
-            <strong>Performance:</strong> RMSE = 7.0% | MAE = 4.9% | R² = 0.93
+            <strong>Performance:</strong> RMSE = 7.85% | MAE = 5.64% | R² = 0.91
         </div>
         """
     )
