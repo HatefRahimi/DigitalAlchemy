@@ -228,7 +228,7 @@ custom_css = """
 }
 """
 
-# Create Gradio interface
+# Gradio interface
 with gr.Blocks(title="Buchwald-Hartwig Yield Predictor", css=custom_css, theme=gr.themes.Default()) as app:
     gr.HTML(
         """
