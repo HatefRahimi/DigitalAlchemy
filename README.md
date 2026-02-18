@@ -2,7 +2,7 @@
 
 Machine learning for predicting Buchwald-Hartwig C-N coupling reaction yields. Compares one-hot encoding vs transformer-based approaches (ChemBERTa) on the Ahneman dataset (4312 reactions).
 
-**Course Project**: Developed as part of an ML course including chemistry sessions and practical exercises.
+**Course Project**: Developed as part of an ML course, including chemistry sessions and practical exercises.
 
 ---
 
@@ -18,7 +18,7 @@ Machine learning for predicting Buchwald-Hartwig C-N coupling reaction yields. C
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 ```bash
 # Install dependencies
 pip install numpy pandas scikit-learn tensorflow gradio
@@ -31,7 +31,7 @@ python yield_predictor_Gradio.py
 
 ---
 
-## 📁 Repository
+## Repository
 
 - `yield_prediction_ahneman.ipynb` - One-hot encoding approach
 - `yield_prediction_Reaction_Smiles.ipynb` - ChemBERTa approach  
@@ -39,11 +39,6 @@ python yield_predictor_Gradio.py
 - `yield_model.keras` - Trained model
 - `Alchemy.pdf` - Full technical report
 
----
-
-## 👤 Author
-
-**Hatef Rahimi** | FAU Erlangen-Nürnberg | hatef.rahimi@fau.de
 
 ---
 
