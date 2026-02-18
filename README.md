@@ -6,7 +6,7 @@ Machine learning for predicting Buchwald-Hartwig C-N coupling reaction yields. C
 
 ---
 
-## 🔬 Results
+## Results
 
 | Approach | RMSE | MAE | R² |
 |----------|------|-----|-----|
