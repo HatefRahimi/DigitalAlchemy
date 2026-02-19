@@ -1,6 +1,4 @@
 # Digital Alchemy 
-# IMPORTANT: first, install ord-schema
-# pip install ord-schema
 
 ord-schema
 numpy
