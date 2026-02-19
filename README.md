@@ -17,17 +17,24 @@ Machine learning for predicting Buchwald-Hartwig C-N coupling reaction yields. C
 ---
 
 ## Quick Start
-```bash
-# Step 1: Install ord-schema first (protobuf compatibility)
-pip install ord-schema
 
-# Step 2: Install remaining dependencies
+**Requirements:** Python 3.11
+```bash
+# Create virtual environment with Python 3.11
+python3.11 -m venv alchemy_env
+source alchemy_env/bin/activate  # Linux/Mac
+# alchemy_env\Scripts\activate  # Windows
+
+# Install all dependencies
 pip install -r requirements.txt
+
+# Run web app
+python yield_predictor_Gradio.py
 ```
 
 **Web Interface**: Select catalyst, aryl halide, base, and additive → Get instant yield prediction
 
-**Note**: ord-schema must be installed before TensorFlow due to conflicting protobuf requirements.
+**Note**: Python 3.11 is required for proper dependency resolution between TensorFlow and ord-schema.
 
 ---
 
