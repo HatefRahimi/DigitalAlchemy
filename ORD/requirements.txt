@@ -1,0 +1,30 @@
+# Digital Alchemy 
+# IMPORTANT: first, install ord-schema
+# pip install ord-schema
+
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+tensorflow
+keras
+gradio
+
+
+# Chemistry
+rdkit
+
+
+# Transformers
+transformers
+torch
+tokenizers
+
+# Jupyter and utilities
+jupyter
+notebook
+ipython
+tqdm
+openpyxl
