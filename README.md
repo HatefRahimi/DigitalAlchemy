@@ -1,5 +1,4 @@
 # Digital Alchemy: ML for Reaction Yield Prediction
-
 Machine learning for predicting Buchwald-Hartwig C-N coupling reaction yields. Compares one-hot encoding vs transformer-based approaches (ChemBERTa) on the Ahneman dataset (4312 reactions).
 
 **Course Project**: Developed as part of an ML course, including chemistry sessions and practical exercises.
@@ -7,7 +6,6 @@ Machine learning for predicting Buchwald-Hartwig C-N coupling reaction yields. C
 ---
 
 ## Results
-
 | Approach | RMSE | MAE | R² |
 |----------|------|-----|-----|
 | **One-Hot + Neural Network** | **7.8%** | **5.6%** | **0.9** |
@@ -20,25 +18,29 @@ Machine learning for predicting Buchwald-Hartwig C-N coupling reaction yields. C
 
 ## Quick Start
 ```bash
-# Install dependencies
-pip install numpy pandas scikit-learn tensorflow gradio
+# Step 1: Install ord-schema first (protobuf compatibility)
+pip install ord-schema
 
-# Run web app
+# Step 2: Install remaining dependencies
+pip install -r requirements.txt
+
+# Step 3: Run web app
 python yield_predictor_Gradio.py
 ```
 
 **Web Interface**: Select catalyst, aryl halide, base, and additive → Get instant yield prediction
 
+**Note**: ord-schema must be installed before TensorFlow due to conflicting protobuf requirements. See [INSTALL.md](INSTALL.md) for details.
+
 ---
 
 ## Repository
-
 - `yield_prediction_ahneman.ipynb` - One-hot encoding approach
 - `yield_prediction_Reaction_Smiles.ipynb` - ChemBERTa approach  
 - `yield_predictor_Gradio.py` - Interactive web app
 - `yield_model.keras` - Trained model
+- `requirements.txt` - Python dependencies
 - `Alchemy.pdf` - Full technical report
-
 
 ---
 
