@@ -23,14 +23,11 @@ pip install ord-schema
 
 # Step 2: Install remaining dependencies
 pip install -r requirements.txt
-
-# Step 3: Run web app
-python yield_predictor_Gradio.py
 ```
 
 **Web Interface**: Select catalyst, aryl halide, base, and additive → Get instant yield prediction
 
-**Note**: ord-schema must be installed before TensorFlow due to conflicting protobuf requirements. See [INSTALL.md](INSTALL.md) for details.
+**Note**: ord-schema must be installed before TensorFlow due to conflicting protobuf requirements.
 
 ---
 
