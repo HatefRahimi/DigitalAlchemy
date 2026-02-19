@@ -39,12 +39,12 @@ python yield_predictor_Gradio.py
 ---
 
 ## Repository
-- `yield_prediction_ahneman.ipynb` - One-hot encoding approach
-- `yield_prediction_Reaction_Smiles.ipynb` - ChemBERTa approach  
-- `yield_predictor_Gradio.py` - Interactive web app
-- `yield_model.keras` - Trained model
-- `requirements.txt` - Python dependencies
-- `Alchemy.pdf` - Full technical report
+- `yield_prediction_ahneman.ipynb`: One-hot encoding approach
+- `yield_prediction_Reaction_Smiles.ipynb`: ChemBERTa approach  
+- `yield_predictor_Gradio.py`: Interactive web app
+- `yield_model.keras`: Trained model
+- `requirements.txt`: Python dependencies
+- `Alchemy.pdf`: Full technical report
 
 ---
 
