@@ -44,7 +44,7 @@ python yield_predictor_Gradio.py
 - `yield_predictor_Gradio.py`: Interactive web app
 - `yield_model.keras`: Trained model
 - `requirements.txt`: Python dependencies
-- `Final_Report.pdf`: Full technical report
+- `Final Report.pdf`: Full technical report
 
 ---
 
