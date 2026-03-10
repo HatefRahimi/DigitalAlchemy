@@ -4,8 +4,8 @@ __pycache__/
 *$py.class
 
 *.xyz
-*.txt
 *.pkl
+*.txt
 
 # C extensions
 *.so
@@ -233,3 +233,5 @@ Miniconda3-latest-Linux-x86_64.sh
 *.keras
 
 *.pem
+
+myenv/
